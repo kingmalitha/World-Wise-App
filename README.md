@@ -129,3 +129,11 @@ const handleClick = () => {
 www.example.com/app/cities/lisbon?lat=38.7223&lng=-9.1393
 ``
 ```
+
+### GETTING CITY DETAILS FROM THE API
+
+- In order to get the city details from the API. We have used
+
+```
+https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0
+```
