@@ -2,9 +2,22 @@
 
 ## DESCRIPTION
 
+- This is a simple app that users can add their visiting cities and countries to the list. Also, they can delete the cities and countries from the list. This app is created with related to the [React Ultimate Course](https://www.udemy.com/course/react-the-ultimate-guide-to-learn-react/) by Jonas Schmedtmann.
+
 ## FEATURES
 
+- Search through Map and Get the City Details
+- Add City to the List
+- Delete City from the List
+- Login and Logout
+- Geo Location
+
 ## SCREENSHOTS
+
+![Home Page](mark_img/home_page.png)
+![Cities Page](mark_img/cities_page.png)
+![Form Page](mark_img/form_page.png)
+![Login Page](mark_img/login_page.png)
 
 # WHAT I LEARNED
 
