@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
