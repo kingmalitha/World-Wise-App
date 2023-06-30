@@ -14,8 +14,8 @@ const CityList = ({ cities, isLoading }) => {
 
   return (
     <ul className={styles.cityList}>
-      {cities.map((city) => (
-        <CityItem key={city.id} />
+      {cities.map((city, index) => (
+        <CityItem key={index} city={city} />
       ))}
     </ul>
   );
