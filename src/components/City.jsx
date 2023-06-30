@@ -4,6 +4,7 @@ import { useCities } from "../contexts/CitiesContext";
 import { useEffect } from "react";
 import Spinner from "./Spinner";
 import ButtonBack from "./ButtonBack";
+import { flagemojiToPNG } from "./CityItem";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -30,7 +31,7 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{emoji}</span> {cityName}
+          <span>{flagemojiToPNG(emoji)}</span> {cityName}
         </h3>
       </div>
 
