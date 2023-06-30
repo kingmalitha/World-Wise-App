@@ -1,33 +1,33 @@
 /* eslint-disable react/prop-types */
-import Spinner from "./Spinner";
-import Message from "./Message";
 import styles from "./CountryList.module.css";
+import Spinner from "./Spinner";
 import CountryItem from "./CountryItem";
+import Message from "./Message";
 
-const CountryList = ({ cities, isLoading }) => {
+function CountryList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
 
-  const countries = cities.reduce((accumulator, currentvalue) => {
-    if (
-      !accumulator.map((item) => item.country).includes(currentvalue.country)
-    ) {
-      return [...accumulator, currentvalue];
-    }
-    return accumulator;
-  }, []);
-
-  if (!countries.length)
+  if (!cities.length)
     return (
       <Message message='Add your first city by clicking on a city on the map' />
     );
 
+  const countries = cities.reduce((arr, city) => {
+    if (!arr.map((el) => el.country).includes(city.country))
+      return [...arr, { country: city.country, emoji: city.emoji }];
+    else return arr;
+  }, []);
+
+  console.log(countries);
+
   return (
     <ul className={styles.countryList}>
-      {countries.map((country, index) => (
-        <CountryItem key={index} city={country} />
-      ))}
+      {countries.map((country) => {
+        console.log(country);
+        return <CountryItem country={country} key={country.country} />;
+      })}
     </ul>
   );
-};
+}
 
 export default CountryList;

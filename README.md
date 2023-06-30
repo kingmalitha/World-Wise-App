@@ -59,3 +59,18 @@ const countries = cities.reduce((accumulator, currentvalue) => {
 
 - `index element` is the default route. It will be rendered when the parent route is rendered.
 - Now, Where these routes will be rendered? We need to add `<Outlet />` in the relavant component.
+
+## URL FOR STATE MANAGEMENT
+
+- Easy way to store state in a `global place`, accessible to `all components` in the app.
+
+- Good way to `pass data` from one page into the next page.
+
+- Makes it possible to `bookmark or share` the page with the exact UI state it had at the time.
+
+### PARAMS AND QUERY STRING
+
+```js
+www.example.com/app/cities/lisbon?lat=38.7223&lng=-9.1393
+``
+```
