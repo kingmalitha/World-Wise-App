@@ -60,6 +60,61 @@ const countries = cities.reduce((accumulator, currentvalue) => {
 - `index element` is the default route. It will be rendered when the parent route is rendered.
 - Now, Where these routes will be rendered? We need to add `<Outlet />` in the relavant component.
 
+### `USEPARAMS` HOOK
+
+- The `useParams` hook allows us to access the `params` from the current route.
+
+```js
+const { id } = useParams();
+```
+
+### `USESEARCHPARAMS` HOOK
+
+- The `useSearchParams` hook allows us to access the `query string` from the current route.
+
+```js
+const [searchParams, setSearchParams] = useSearchParams();
+```
+
+- How to get the value of a specific query string?
+
+```
+www.example.com/app/cities/lisbon?lat=38.7223&lng=-9.1393
+```
+
+```js
+const lat = searchParams.get("lat");
+const lng = searchParams.get("lng");
+```
+
+- How to update the value of a specific query string?
+
+```js
+setSearchParams({ lat: 38.7223, lng: -9.1393 });
+```
+
+### `USENAVIGATE` HOOK
+
+- The `useNavigate` hook allows us to navigate to a different route.
+
+```js
+const navigate = useNavigate();
+
+const handleClick = () => {
+  navigate("/app/form");
+};
+```
+
+### `Navigate` FUNCTION
+
+- This is not comonly used. But there are some cases where we need to use this function. Also, when we can't use hooks, we can use this function.
+
+```js
+<Route index element={<Navigate replace to='cities' />} />
+```
+
+- `replace` prop will replace the current route with the new route. This will enable us to go back to the previous route using the browser back button.
+
 ## URL FOR STATE MANAGEMENT
 
 - Easy way to store state in a `global place`, accessible to `all components` in the app.
