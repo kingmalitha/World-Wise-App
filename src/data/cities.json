@@ -35,66 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    },
-    {
-      "cityName": "Villar del Pedroso",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-06-30T10:14:47.117Z",
-      "notes": "dsds",
-      "position": {
-        "lat": "39.63953756436671",
-        "lng": "-5.318293725321653"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Tarazona de Guarena",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2023-06-30T10:17:34.131Z",
-      "notes": "sdada",
-      "position": {
-        "lat": "41.178653972331674",
-        "lng": "-5.275700980344715"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Saint-Laurent-les-Bains-Laval-d'Aurelle",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-06-30T10:20:59.854Z",
-      "notes": "ssda",
-      "position": {
-        "lat": "44.59046718130883",
-        "lng": "3.941276415580984"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Saint-Laurent-les-Bains-Laval-d'Aurelle",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2023-06-30T10:22:19.113Z",
-      "notes": "",
-      "position": {
-        "lat": "44.59046718130883",
-        "lng": "3.941276415580984"
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Kolo",
-      "country": "Poland",
-      "emoji": "🇵🇱",
-      "date": "2023-06-30T10:23:42.199Z",
-      "notes": "Hello",
-      "position": {
-        "lat": "52.1874047455997",
-        "lng": "18.706763398486792"
-      },
-      "id": 98443202
     }
   ]
 }
