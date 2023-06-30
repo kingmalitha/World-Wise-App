@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
+import { flagemojiToPNG } from "./CityItem";
 import styles from "./CountryItem.module.css";
 
 function CountryItem({ country }) {
   return (
     <li className={styles.countryItem}>
-      <span>{country.emoji}</span>
+      <span>{flagemojiToPNG(country.emoji)}</span>
       <span>{country.country}</span>
     </li>
   );
