@@ -14,6 +14,7 @@ import { useCities } from "../contexts/CitiesContext";
 import { flagemojiToPNG } from "./CityItem";
 import { useGeolocation } from "../hooks/useGeoLocation";
 import Button from "./Button";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 
 const Map = () => {
   const { cities } = useCities();
@@ -25,10 +26,7 @@ const Map = () => {
 
   const [mapPosition, setMapPosition] = useState([40, 0]);
 
-  const [searchParams, setSeachParams] = useSearchParams();
-
-  const mapLat = searchParams.get("lat");
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
     if (mapLat && mapLng) {
